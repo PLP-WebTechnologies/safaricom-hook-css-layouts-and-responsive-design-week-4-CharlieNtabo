@@ -1,0 +1,166 @@
+html {
+  --color-primary-100: rgb(232, 233, 232);
+  --color-primary-300: rgb(66, 66, 65);
+  --color-primary-400: rgb(64, 65, 65);
+  --color-primary-500: rgb(59, 59, 59);
+  --color-primary-600: rgb(58, 58, 58);
+  --color-primary-700: rgb(43, 43, 42);
+
+  --color-orange-200: rgb(255, 194, 179);
+  --color-orange-300: rgb(255, 112, 77);
+  --color-orange-400: rgb(255, 71, 26);
+  --color-orange-500: rgb(255, 51, 0);
+  --color-orange-700: rgb(128, 26, 0);
+  --color-orange-800: rgb(51, 10, 0);
+
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-primary-100);
+  
+  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+  list-style: none;
+}
+
+header li {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-orange-700);
+  transition: transform 2s ease-out;
+}
+
+header li:hover {
+  color: var(--color-primary-400);
+  background-color: var(--color-orange-200);
+  padding: 6px 12px;
+  border-radius: 0.5rem;
+  transform: scale(1.01);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--color-primary-700);
+  margin: 10px;
+  transition: transform 2s ease-out;
+}
+
+h1:hover {
+    transform: scale(1.04);
+}
+
+h2 {
+  color: var(--color-primary-300);
+  margin: 0 0 20px;
+}
+
+#logo {
+  font-family: "Zilla Slab", sans-serif;
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--color-orange-500);
+  padding: 0.2rem;
+  border: 2px solid var(--color-primary-600);
+}
+
+#food {
+  list-style: none;
+  width: 1200px;
+  margin: 0 auto 37px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+}
+
+#food img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 12px;
+}
+
+.header p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: var(--color-primary-500);
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.menu-items {
+  width: 90%;
+}
+
+.food-item {
+  width: 280px;
+  height: 300px;
+  background-color: var(--color-orange-200);
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 1s ease-out;
+}
+
+.food-item:hover {
+  transform: scale(1.02);
+}
+
+.order-item {
+  padding: 2px;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--color-orange-800);
+  background-color: var(--color-orange-300);
+  padding: 12px 24px;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--color-orange-400);
+}
+
+footer {
+    height: 300px;
+    background: linear-gradient(135deg, var(--color-primary-400), var(--color-primary-600));
+    width: 100%;
+}
+
+#footer-content ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+#footer-content li {
+    margin: 30px 50px;
+}
+
+#footer-content img {
+    width: 180px;
+    
+}
+
+#footer-content p {
+    text-align: center;
+    color: white;
+}
